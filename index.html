@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Plans</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <div class="pricing-container">
+    <!-- ── HEADER ── -->
+    <div class="header">
+      <h1>Our Plans</h1>
+      <p>Choose the plan that works best for you.</p>
+      
+      <!-- Toggle Switch -->
+      <div class="toggle-box">
+        <span id="monthlyText" class="active-text">Monthly</span>
+        <label class="switch">
+          <input type="checkbox" id="toggleBtn" onchange="changePrice()">
+          <span class="slider"></span>
+        </label>
+        <span id="yearlyText">Yearly (Save 20%)</span>
+      </div>
+    </div>
+
+    <!-- ── CARDS GRID ── -->
+    <div class="cards-wrapper">
+      
+      <!-- Basic Plan -->
+      <div class="card">
+        <h2>Basic</h2>
+        <p class="desc">For beginners</p>
+        
+        <div class="price-box">
+          <span class="dollar">₹</span>
+          <span class="price" id="basicPrice">499</span>
+          <span class="month">/mo</span>
+        </div>
+        <p class="billing-note" id="basicNote">Billed monthly</p>
+        
+        <ul class="features">
+          <li><i class="fa-solid fa-check"></i> 1 Website</li>
+          <li><i class="fa-solid fa-check"></i> 10 GB Storage</li>
+          <li><i class="fa-solid fa-check"></i> Free SSL</li>
+          <li class="grey"><i class="fa-solid fa-xmark"></i> Advanced Analytics</li>
+        </ul>
+        
+        <button class="btn btn-outline">Select Basic</button>
+      </div>
+
+      <!-- Pro Plan (Highlighted) -->
+      <div class="card popular">
+        <div class="badge">Best Value</div>
+        <h2>Pro</h2>
+        <p class="desc">For professionals</p>
+        
+        <div class="price-box">
+          <span class="dollar">₹</span>
+          <span class="price" id="proPrice">1499</span>
+          <span class="month">/mo</span>
+        </div>
+        <p class="billing-note" id="proNote">Billed monthly</p>
+        
+        <ul class="features">
+          <li><i class="fa-solid fa-check"></i> 10 Websites</li>
+          <li><i class="fa-solid fa-check"></i> 100 GB Storage</li>
+          <li><i class="fa-solid fa-check"></i> Free SSL</li>
+          <li><i class="fa-solid fa-check"></i> Advanced Analytics</li>
+        </ul>
+        
+        <button class="btn btn-solid">Select Pro</button>
+      </div>
+
+      <!-- Enterprise Plan -->
+      <div class="card">
+        <h2>Enterprise</h2>
+        <p class="desc">For large teams</p>
+        
+        <div class="price-box">
+          <span class="dollar">₹</span>
+          <span class="price" id="entPrice">4999</span>
+          <span class="month">/mo</span>
+        </div>
+        <p class="billing-note" id="entNote">Billed monthly</p>
+        
+        <ul class="features">
+          <li><i class="fa-solid fa-check"></i> Unlimited Websites</li>
+          <li><i class="fa-solid fa-check"></i> Unlimited Storage</li>
+          <li><i class="fa-solid fa-check"></i> Free SSL</li>
+          <li><i class="fa-solid fa-check"></i> Dedicated Manager</li>
+        </ul>
+        
+        <button class="btn btn-outline">Select Enterprise</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
